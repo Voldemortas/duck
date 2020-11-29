@@ -4,12 +4,14 @@
         <title>
             &#129414; DUCKY &#129414;
         </title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
         <style>
-            body{
+            html, body{
                 margin: 0;
                 background-color: rgb(25, 25, 25);
                 overflow-x: hidden;
-            }
+            }            
+
             .main{
                 text-align: center;    
                 font-size: 50px;
@@ -42,18 +44,43 @@
                     left: calc(100% - 380px);
                 }
             }
+            @media only screen and (max-width: 850px) {
+                .main{
+                    text-align: center;    
+                    font-size: 25px;
+                }
+                pre{
+                    font-size: 40px;
+                }
+                article{      
+                    padding-top: 160px;      
+                }
+                @keyframes swim {
+                    from {
+                        left: calc(100% - 155px);
+                    }
+
+                    50%{
+                        left: 0%;
+                    }
+
+                    to {                
+                        left: calc(100% - 155px);
+                    }
+                }
+            }
         </style>
     </head>
     <body>
         <main class="main">
-            <h1>TALK WITH DUCKO</h1>
+            <h1>DUCKO</h1>
         <pre id='duck'>
   <span>_</span>   
 <span>></span><span>(</span><span>.</span><span>)</span><span>_</span><span>_</span>
  <span>(</span><span>_</span><span>_</span><span>_</span><span>/</span> </pre>
             <article>
-                Give the microphone permissions <br />
-                Talk with the Ducky <br />
+                Give the microphone permissions; <br />
+                Talk with the Ducky; <br />
                 Notice: your attention makes it happy — <br />
                 It changes its feathers as you speak 
             </article>
