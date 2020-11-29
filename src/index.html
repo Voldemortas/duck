@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            &#129414; DUCKY &#129414;
+        </title>
+        <style>
+            body{
+                margin: 0;
+                background-color: rgb(25, 25, 25);
+                overflow-x: hidden;
+            }
+            .main{
+                text-align: center;    
+                font-size: 50px;
+                color: #eee;
+            }
+            pre{
+                display: inline-block;
+                text-align: left;
+                font-size: 100px;
+                position: absolute;
+                top: 25px;
+                animation-duration: 10s;
+                animation-name: swim;
+                animation-iteration-count: infinite;
+                transition-timing-function: linear;
+            }
+            article{      
+                padding-top: 320px;      
+            }
+            @keyframes swim {
+                from {
+                    left: calc(100% - 380px);
+                }
+
+                50%{
+                    left: 0%;
+                }
+
+                to {                
+                    left: calc(100% - 380px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <h1>TALK WITH DUCKO</h1>
+        <pre id='duck'>
+  <span>_</span>   
+<span>></span><span>(</span><span>.</span><span>)</span><span>_</span><span>_</span>
+ <span>(</span><span>_</span><span>_</span><span>_</span><span>/</span> </pre>
+            <article>
+                Give the microphone permissions <br />
+                Talk with the Ducky <br />
+                Notice: your attention makes it happy — <br />
+                It changes its feathers as you speak 
+            </article>
+        </main>
+        <script>
+            let position = true;
+            setInterval(() => {
+                if(position){
+                    document.getElementById('duck').setAttribute('style', 'transform: scale(-1, 1);')
+                }else{
+                    document.getElementById('duck').removeAttribute('style')
+                }
+                position = !position                 
+            }, 5000)
+        </script>
+        <script src='mic.js'></script>
+        <script src='draw.js'></script>
+    </body>
+</html>
