@@ -6,7 +6,8 @@ let values = { val: [] }
 const colour2 = (val) => 200 - Math.max(val - 255, 0)
 const templates = [(val) => `rgb(${val}, ${colour2(val)}, 50)`]
 
-getMicrophone(values)
+setTimeout(() =>
+getMicrophone(values), 10)
 const duck = () => document.getElementById('duck')
 setInterval(() => {
   const realWaves = values.val.slice(0, values.val.length / 32)
