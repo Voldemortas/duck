@@ -7,4 +7,4 @@ http
   .createServer(function (req, res) {
     file.serve(req, res)
   })
-  .listen(3000)
+  .listen(3008)
